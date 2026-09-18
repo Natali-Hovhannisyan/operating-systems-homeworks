@@ -1,0 +1,2 @@
+C is the main programming language used in Operating Systems
+Python is an interpreted programming language
