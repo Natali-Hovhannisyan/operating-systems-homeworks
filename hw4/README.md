@@ -6,7 +6,6 @@ The purpose of this assignment was to understand how a C program with multiple s
 
 I also used `nm`, `objdump`, and `readelf` to examine the symbols, assembly code, and ELF structure of the object files and the final executable.
 
----
 
 ## 2. Program Structure
 
@@ -55,7 +54,6 @@ The `main.c` file calls the `square()` function.
 
 The function is implemented in `math_utils.c`, while its declaration is placed in `math_utils.h`.
 
----
 
 ## 3. Separate Compilation and Linking
 
@@ -99,7 +97,6 @@ Square of 5 is 25
 
 This shows that each source file can first be compiled independently and then combined by the linker to create the final program.
 
----
 
 ## 4. Symbol Analysis Using `nm`
 
@@ -168,7 +165,6 @@ After linking, both `main` and `square` are defined in the final executable.
 
 The executable also contains additional symbols such as `_start`, `_init`, and `_fini`.
 
----
 
 ## 5. Assembly Analysis Using `objdump`
 
@@ -252,7 +248,6 @@ deregister_tm_clones
 
 This happens because the final executable needs extra code for program startup, shutdown, and shared libraries.
 
----
 
 ## 6. ELF Header Analysis Using `readelf`
 
@@ -311,7 +306,6 @@ Unlike the object files, the executable has an actual entry point and program he
 
 This is because it is a complete program that can be loaded and executed.
 
----
 
 ## 7. Section Analysis
 
@@ -405,7 +399,6 @@ It also contained additional sections such as:
 
 The executable has more sections because it contains the combined program as well as additional information needed for execution and dynamic linking.
 
----
 
 ## 8. Comparison of the Files
 
@@ -423,7 +416,6 @@ The object files contain fewer symbols and sections because they represent indiv
 
 The final executable contains more symbols, more sections, startup code, and information needed for shared libraries.
 
----
 
 ## 9. Conclusion
 
