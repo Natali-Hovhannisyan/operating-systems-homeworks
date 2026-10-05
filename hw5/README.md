@@ -249,3 +249,20 @@ Every successful memory allocation should eventually be followed by `free()`.
 I also learned that when there are several levels of dynamically allocated memory, like in the string array task, each allocated part must be freed separately.
 
 Overall, dynamic memory makes programs more flexible because the required amount of memory can be decided while the program is running.
+
+## Outputs
+### Task1
+<img width="577" height="59" alt="image" src="https://github.com/user-attachments/assets/2a8c7144-0533-4fa6-b3d4-cf49a0a8e716" />
+
+### Task2
+<img width="577" height="89" alt="image" src="https://github.com/user-attachments/assets/64f7f994-9669-475d-ab11-c02b5a5cc2ad" />
+
+### Task3
+<img width="577" height="42" alt="image" src="https://github.com/user-attachments/assets/c6e634b5-f34a-4526-8bd4-6cc78aa2a6be" />
+
+### Task4
+<img width="577" height="70" alt="image" src="https://github.com/user-attachments/assets/1e7f52bb-c366-4d57-939a-840d3a0a8e7d" />
+
+### Task5
+<img width="577" height="70" alt="image" src="https://github.com/user-attachments/assets/6e299e3c-90ca-48ba-bb8d-ee391181e088" />
+
