@@ -4,6 +4,8 @@
 
 In this assignment, I created variables of types `int`, `char`, `double`, and `short`. I used `sizeof()` to find their sizes and the `&` operator to print their memory addresses.
 
+<img width="658" height="231" alt="image" src="https://github.com/user-attachments/assets/60558281-d193-4f2b-ad16-c44bef8b6666" />
+
 The results showed that `int` occupies 4 bytes, `char` occupies 1 byte, `double` occupies 8 bytes, and `short` occupies 2 bytes.
 
 The memory addresses were:
@@ -21,6 +23,8 @@ This demonstrates that the compiler places variables at memory addresses that sa
 
 In this assignment, I created three structs containing the same fields (`char`, `int`, and `double`) but arranged in different orders. I printed the size of each struct and the addresses of its fields to observe how padding affects memory usage.
 
+<img width="658" height="281" alt="image" src="https://github.com/user-attachments/assets/5ac155b5-1902-4c65-a541-11ac116b8c91" />
+
 The first struct had the field order `char`, `int`, `double` and occupied 16 bytes. Its field addresses were `0x7fff9469fcf0`, `0x7fff9469fcf4`, and `0x7fff9469fcf8`. Although the fields require only 13 bytes in total, the compiler added 3 padding bytes after `char` so that `int` starts at a properly aligned address.
 
 The second struct had the field order `double`, `int`, `char` and also occupied 16 bytes. Its field addresses were `0x7fff9469fd00`, `0x7fff9469fd08`, and `0x7fff9469fd0c`. In this case, the compiler added 3 padding bytes at the end of the struct to make its total size a multiple of its alignment requirement.
@@ -32,6 +36,8 @@ These results show that changing the order of fields can affect the size of a st
 ## Assignment 3: Data Alignment with #pragma pack
 
 In this assignment, I compared a normal struct with structs using `#pragma pack(1)`, `#pragma pack(2)`, and `#pragma pack(4)`. Each struct contained the same fields: `char a`, `int b`, and `double c`.
+
+<img width="658" height="383" alt="image" src="https://github.com/user-attachments/assets/0c5cc3ca-22d8-4d4f-b21c-5e539ae71dce" />
 
 The normal struct occupied 16 bytes. Its field addresses were `0x7ffca3213c50`, `0x7ffca3213c54`, and `0x7ffca3213c58`. The compiler added 3 padding bytes between `char` and `int` to satisfy the normal alignment requirements.
 
