@@ -31,3 +31,7 @@ Type `4` for the number of processes, then enter:
 FCFS runs processes in arrival order. Non-preemptive SJF selects the shortest *available* process whenever the CPU becomes free; it cannot execute a process before arrival. Equal burst times are resolved by earlier arrival, then lower PID. If nothing has arrived, the CPU stays idle until the next arrival.
 
 **Correction to the homework example:** Its SJF sample chart starts with P2 even though P2 arrives at time 1 and P1 arrives at time 0. With proper non-preemptive SJF, P1 runs first. The correct sample order is P1, P2, P4, P3.
+
+## Sample output/input example from my local run
+
+<img width="513" height="633" alt="image" src="https://github.com/user-attachments/assets/bfb5cfb7-f7c0-4819-a775-42ef1fc06f3a" />
